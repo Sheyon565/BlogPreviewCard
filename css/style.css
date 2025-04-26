@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('fonts/Figtree-VariableFont_wght.ttf') format('truetype-variations');
+    src: url('fonts/Figtree-VariableFont_wght.woff2') format('woff2-variations');
+    font-weight: 300 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype-variations');
+    src: url('fonts/Figtree-Italic-VariableFont_wght.woff2') format('woff2-variations');
+    font-weight: 300 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-900: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--yellow);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card {
+    width: min(100%, 340px);
+    padding: 1rem;
+    border-radius: 1.2rem;
+    border: 1px solid #000;
+    box-shadow: 5px 8px 0 0 #000;
+    background-color: var(--White);
+}
+
+.card__illustration {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 0 0 1rem;
+}
+
+.card__tag {
+    width: fit-content;
+    display: block;
+    font-weight: 800;
+    font-size: 0.7rem;
+    background-color: var(--yellow);
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    margin: 0 0 0.5rem;
+}
+
+.card__date {
+    font-size: 0.75rem;
+}
+
+.card__title {
+    display: block;
+    margin: 1rem 0;
+    font-weight: 800;
+    font-size: 1.15rem;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--Gray-900)
+}
+
+.card__title:hover {
+    color: var(--yellow);
+}
+
+.card__description {
+    color: var(--Gray-500);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.card__publisher {
+    display: flex;
+    align-items: center;
+}
+
+.publisher__image {
+    width: 30px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.publisher__name {
+    font-weight: 800;
+    font-size: 0.65rem;
+    font-style: normal;
+}

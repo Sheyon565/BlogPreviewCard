@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Blog preview card</title>
 
@@ -24,22 +25,26 @@
 </head>
 
 <body>
+  <main class="card">
+    <img class="card__illustration" src="assets/images/illustration-article.svg" alt="Decorative geometric pattern"
+      width="336" height="201" loading="lazy">
+    <span class="card__tag" role="note" aria-label="Category: Learning">Learning</span>
+    <time class="card__date" datetime="2023-12-21">Published 21 Dec 2023</time>
+    <a class="card__title" href="#">HTML & CSS foundations</a>
+    <p class="card__description">These languages are the backbone of every website, defining structure, content, and
+      presentation.</p>
+    <address class="card__publisher">
+      <img src="assets/images/image-avatar.webp" alt="Greg Hooper image" class="publisher__image" width="64" height="64"
+        loading="lazy">
+      <p class="publisher__name">Greg Hooper</p>
+    </address>
+  </main>
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
       Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 
 </html>
