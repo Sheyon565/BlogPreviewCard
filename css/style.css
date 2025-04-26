@@ -40,7 +40,7 @@ body {
 }
 
 .card {
-    width: min(100%, 340px);
+    width: min(100%, 370px);
     padding: 1rem;
     border-radius: 1.2rem;
     border: 1px solid #000;
